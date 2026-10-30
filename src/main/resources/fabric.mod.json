@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "cozyhome",
+	"version": "${version}",
+	"name": "Lucky's Cozy Home: Refurnished (Unofficial)",
+	"description": "Unofficial Fabric backport of Lucky's Cozy Home: Refurnished for Minecraft 1.20.1.",
+	"authors": [
+		"LuckyOwl",
+		"DipChip",
+		"PrelawAverage",
+		"JustHari01"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/mod/cozy-home",
+		"sources": "https://github.com/JustHari01/Luckys-Cozyhome-Refurnished-1.20.1-Fabric-Port",
+		"issues": "https://github.com/JustHari01/Luckys-Cozyhome-Refurnished-1.20.1-Fabric-Port/issues"
+	},
+	"license": "MIT",
+	"icon": "assets/cozyhome/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.luckystudio.cozyhome.CozyHome"
+		],
+		"fabric-datagen": [
+			"net.luckystudio.cozyhome.CozyHomeDataGenerator"
+		],
+		"client": [
+			"net.luckystudio.cozyhome.CozyHomeClient"
+		]
+	},
+	"mixins": [
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
+}
